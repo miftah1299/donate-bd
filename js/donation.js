@@ -12,7 +12,12 @@ document
 
         if (accountBalance < addMoney) {
             alert("Insufficient balance");
+        } else if (addMoney < 0 || isNaN(addMoney)) {
+            alert("Invalid input");
         } else {
+            // show modal
+            document.getElementById('modal').checked = true;
+
             const currentBalance = balance + addMoney;
             accountBalance -= addMoney;
             document.getElementById("balance-noakhali").innerText =
@@ -21,32 +26,30 @@ document
         }
     });
 
-
 // add money to feni donation
-document
-    .getElementById("btn-feni")
-    .addEventListener("click", function (event) {
-        //prevent default
-        event.preventDefault();
+document.getElementById("btn-feni").addEventListener("click", function (event) {
+    //prevent default
+    event.preventDefault();
 
-        let accountBalance = getTextFieldById("acc-balance");
-        const addMoney = getInputFieldById("feni");
-        console.log(accountBalance);
-        const balance = getTextFieldById("balance-feni");
+    let accountBalance = getTextFieldById("acc-balance");
+    const addMoney = getInputFieldById("feni");
+    console.log(accountBalance);
+    const balance = getTextFieldById("balance-feni");
 
-        if (accountBalance < addMoney) {
-            alert("Insufficient balance");
-        } else {
-            const currentBalance = balance + addMoney;
-            accountBalance -= addMoney;
-            document.getElementById("balance-feni").innerText =
-                currentBalance;
-            document.getElementById("acc-balance").innerText = accountBalance;
-        }
-    });
-
-
-
+    if (accountBalance < addMoney) {
+        alert("Insufficient balance");
+    } else if (addMoney < 0 || isNaN(addMoney)) {
+        alert("Invalid input");
+    } else {
+        // show modal
+        document.getElementById('modal').checked = true;
+        
+        const currentBalance = balance + addMoney;
+        accountBalance -= addMoney;
+        document.getElementById("balance-feni").innerText = currentBalance;
+        document.getElementById("acc-balance").innerText = accountBalance;
+    }
+});
 
 // add money to chittagong donation
 document
@@ -62,11 +65,15 @@ document
 
         if (accountBalance < addMoney) {
             alert("Insufficient balance");
+        } else if (addMoney < 0 || isNaN(addMoney)) {
+            alert("Invalid input");
         } else {
+            // show modal
+            document.getElementById('modal').checked = true;
+
             const currentBalance = balance + addMoney;
             accountBalance -= addMoney;
-            document.getElementById("balance-quota").innerText =
-                currentBalance;
+            document.getElementById("balance-quota").innerText = currentBalance;
             document.getElementById("acc-balance").innerText = accountBalance;
         }
     });
