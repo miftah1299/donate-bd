@@ -63,7 +63,7 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
 
     if (accountBalance < addMoney) {
         alert("Insufficient balance");
-    } else if (addMoney < 0 || isNaN(addMoney)) {
+    } else if (addMoney <= 0 || isNaN(addMoney)) {
         alert("Invalid input");
     } else {
         // show modal
@@ -110,7 +110,7 @@ document
 
         if (accountBalance < addMoney) {
             alert("Insufficient balance");
-        } else if (addMoney < 0 || isNaN(addMoney)) {
+        } else if (addMoney <= 0 || isNaN(addMoney)) {
             alert("Invalid input");
         } else {
             // show modal
