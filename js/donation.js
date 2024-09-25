@@ -24,6 +24,9 @@ document
                 currentBalance;
             document.getElementById("acc-balance").innerText = accountBalance;
 
+            // clear input field
+            document.getElementById("noakhali").value = "";
+
             // update history
             const div = document.createElement("div");
             div.classList.add(
@@ -39,12 +42,6 @@ document
              <p class = text-gray-500>Date: ${new Date()} </p>
             `;
             document.getElementById("history-container").appendChild(div);
-
-            // div.innerText = `
-            // <h4 class = text-2xl>Cashout</h4>
-            // <p>Amount: ${cashOut}</p> <p>New balance: ${newBalance}</p>
-            // `
-            // document.getElementById("history").appendChild(div);
         }
     });
 
@@ -71,7 +68,9 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
         document.getElementById("balance-feni").innerText = currentBalance;
         document.getElementById("acc-balance").innerText = accountBalance;
 
-        // update history
+        // clear input field
+        document.getElementById("feni").value = "";
+
         // update history
         const div = document.createElement("div");
         div.classList.add(
@@ -114,6 +113,9 @@ document
             accountBalance -= addMoney;
             document.getElementById("balance-quota").innerText = currentBalance;
             document.getElementById("acc-balance").innerText = accountBalance;
+
+            // clear input field
+            document.getElementById("quota").value = "";
 
             // update history
             const div = document.createElement("div");
