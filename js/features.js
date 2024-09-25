@@ -36,7 +36,7 @@ document
             .classList.add("btn-outline");
     });
 
-// navbar scroll
+// navbar scroll effect
 window.addEventListener("scroll", function () {
     const header = document.getElementById("header");
     if (window.scrollY > 0) {
