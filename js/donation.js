@@ -26,20 +26,17 @@ document
 
             // update history
             const div = document.createElement("div");
-            div.classList.add("border", "border-gray-300", "rounded-md", "p-4", "space-y-4");
+            div.classList.add(
+                "border",
+                "border-gray-300",
+                "rounded-md",
+                "p-4",
+                "space-y-4"
+            );
             // console.log(div);
             div.innerHTML = `
             <h4 class = text-xl font-bold>${addMoney} Taka is Donated for Flood at Noakhali, Bangladesh</h4>
-             <p class = text-gray-500>Date: ${new Date().toLocaleString("en-US", {
-                 weekday: "short",
-                 year: "numeric",
-                 month: "short",
-                 day: "numeric",
-                 hour: "2-digit",
-                 minute: "2-digit",
-                 second: "2-digit",
-                 timeZoneName: "long",
-             })}</p>
+             <p class = text-gray-500>Date: ${new Date()} </p>
             `;
             document.getElementById("history-container").appendChild(div);
 
@@ -77,20 +74,17 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
         // update history
         // update history
         const div = document.createElement("div");
-        div.classList.add("border", "border-gray-300", "rounded-md", "p-4", "space-y-4");
+        div.classList.add(
+            "border",
+            "border-gray-300",
+            "rounded-md",
+            "p-4",
+            "space-y-4"
+        );
         // console.log(div);
         div.innerHTML = `
         <h4 class = text-xl font-bold>${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</h4>
-         <p class = text-gray-500>Date: ${new Date().toLocaleString("en-US", {
-             weekday: "short",
-             year: "numeric",
-             month: "short",
-             day: "numeric",
-             hour: "2-digit",
-             minute: "2-digit",
-             second: "2-digit",
-             timeZoneName: "long",
-         })}</p>
+        <p class = text-gray-500>Date: ${new Date()} </p>
         `;
         document.getElementById("history-container").appendChild(div);
     }
@@ -123,20 +117,17 @@ document
 
             // update history
             const div = document.createElement("div");
-            div.classList.add("border", "border-gray-300", "rounded-md", "p-4", "space-y-4");
+            div.classList.add(
+                "border",
+                "border-gray-300",
+                "rounded-md",
+                "p-4",
+                "space-y-4"
+            );
             // console.log(div);
             div.innerHTML = `
             <h4 class = text-xl font-bold>${addMoney} Taka is Donated for Aid for Injured in the Quota Movement</h4>
-             <p class = text-gray-500>Date: ${new Date().toLocaleString("en-US", {
-                 weekday: "short",
-                 year: "numeric",
-                 month: "short",
-                 day: "numeric",
-                 hour: "2-digit",
-                 minute: "2-digit",
-                 second: "2-digit",
-                 timeZoneName: "long",
-             })}</p>
+             <p class = text-gray-500>Date: ${new Date()} </p>
             `;
             document.getElementById("history-container").appendChild(div);
         }
