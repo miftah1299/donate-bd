@@ -32,22 +32,20 @@
 
 <body class="font-lexend">
     <!-- header -->
-    <header class="bg-accent">
+    <header id="header" class="sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-accent bg-opacity-30">
         <!-- navbar -->
         <nav class="w-11/12 mx-auto">
-            <div class="navbar py-6">
-                <div class="navbar-start">
+            <div class="navbar py-6 flex flex-wrap gap-2 justify-between">
+                <div class="navbar-start lg:order-1 order-2 w-auto">
                     <a href="index.html" class="btn bg-primary font-semibold text-xl px-8">Home</a>
                 </div>
-                <div class="navbar-center flex gap-4">
+                <div class="navbar-center flex gap-4 col-span-2 lg:order-2 order-1 py-4">
                     <img src="assets/logo.png" alt="">
                     <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
                 </div>
-                <div class="navbar-end">
-                    <a class="flex gap-2 text-gray-500">
-                        <img src="assets/coin.png" alt="">
-                        <h3 class="text-xl"> <span>5500</span> BDT</h3>
-                    </a>
+                <div class="navbar-end order-3 flex gap-2 w-auto">
+                    <img src="assets/coin.png" alt="">
+                    <h3 class="text-xl text-zinc-500 whitespace-nowrap"> <span id="acc-balance">5500</span> BDT</h3>
                 </div>
             </div>
         </nav>

@@ -35,32 +35,30 @@
     <header id="header" class="sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-accent bg-opacity-30">
         <!-- navbar -->
         <nav class="w-11/12 mx-auto">
-            <div class="navbar py-6 lg:flex grid gap-4 grid-cols-2">
-                <div class="navbar-start lg:order-1 order-2">
+            <div class="navbar py-6 flex flex-wrap gap-2 justify-between">
+                <div class="navbar-start lg:order-1 order-2 w-auto">
                     <a href="blog.html" class="btn bg-primary font-semibold text-xl px-8">Blog</a>
                 </div>
-                <div class="navbar-center flex gap-4 col-span-2 lg:order-2 order-1">
-                    <img src="assets/logo.png" alt="">
+                <div class="navbar-center flex gap-4 col-span-2 lg:order-2 order-1 py-4">
+                    <img src="assets/logo.png" alt="logo">
                     <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
                 </div>
-                <div class="navbar-end order-3">
-                    <a class="flex gap-2">
-                        <img src="assets/coin.png" alt="">
-                        <h3 class="text-xl text-zinc-500"> <span id="acc-balance">5500</span> BDT</h3>
-                    </a>
+                <div class="navbar-end order-3 flex gap-2 w-auto">
+                    <img src="assets/coin.png" alt="coin">
+                    <h3 class="text-xl text-zinc-500 whitespace-nowrap"> <span id="acc-balance">5500</span> BDT</h3>
                 </div>
             </div>
         </nav>
     </header>
 
     <main class="lg:w-10/12 w-11/12 mx-auto lg:my-20 my-8 space-y-8">
-        <!-- buttons -->
+        <!-- Toggle buttons -->
         <div class="flex gap-4 justify-center">
             <button id="btn-toggle-donation" class="btn px-8 bg-primary">Donation</button>
             <button id="btn-toggle-history" class="btn btn-outline text-gray-500 px-8">History</button>
         </div>
         <section id="donation">
-            <!-- card container -->
+            <!-- Donation card container -->
             <div class="space-y-8">
                 <!-- card1 -->
                 <div class="card lg:card-side border p-8 gap-4">
@@ -110,7 +108,8 @@
                         <div class="card-actions justify-end space-y-4">
                             <input id="feni" type="text" placeholder="Write Donation Amount"
                                 class="input input-bordered w-full" />
-                            <button id="btn-feni" class="btn bg-primary w-full font-semibold text-xl" onclick="openModal()">Donate
+                            <button id="btn-feni" class="btn bg-primary w-full font-semibold text-xl"
+                                onclick="openModal()">Donate
                                 Now</button>
                         </div>
                     </div>
@@ -139,7 +138,8 @@
                         <div class="card-actions justify-end space-y-4">
                             <input id="quota" type="text" placeholder="Write Donation Amount"
                                 class="input input-bordered w-full" />
-                            <button id="btn-quota" class="btn bg-primary w-full font-semibold text-xl" onclick="openModal()">Donate
+                            <button id="btn-quota" class="btn bg-primary w-full font-semibold text-xl"
+                                onclick="openModal()">Donate
                                 Now</button>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
 
         <section id="history" class="hidden">
             <div id="history-container" class="space-y-4">
-
+                <!-- History items will be inserted here -->
             </div>
         </section>
     </main>
